@@ -22,6 +22,14 @@ describe('Test Filecleaner', function() {
       access_token: "123",
       identifier: "azerty",
     };
-    eml(__dirname + "/samples/osef.lock", document, done);
+
+    var changes = {
+      metadatas: {},
+      user_access: [],
+      actions: {},
+      datas: {}
+    };
+
+    eml(__dirname + "/samples/osef.lock", document, changes, done);
   });
 });
