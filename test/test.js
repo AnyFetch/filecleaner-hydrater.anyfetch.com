@@ -4,6 +4,7 @@ require('should');
 
 var eml = require('../lib/');
 var AnyfetchClient = require('anyfetch');
+var anyfetchFileHydrater = require('anyfetch-file-hydrater');
 
 process.env.ANYFETCH_API_URL = 'http://localhost:1338';
 
@@ -23,12 +24,7 @@ describe('Test Filecleaner', function() {
       identifier: "azerty",
     };
 
-    var changes = {
-      metadatas: {},
-      user_access: [],
-      actions: {},
-      datas: {}
-    };
+    var changes = anyfetchFileHydrater.defaultChanges();
 
     eml(__dirname + "/samples/osef.lock", document, changes, done);
   });
