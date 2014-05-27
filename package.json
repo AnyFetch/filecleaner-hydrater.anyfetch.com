@@ -20,7 +20,7 @@
     "filecleaner"
   ],
   "dependencies": {
-    "anyfetch-file-hydrater": "0.2.x",
+    "anyfetch-file-hydrater": ">=0.2.11",
     "anyfetch": "0.2.x",
     "newrelic": "^1.5.5"
   },
