@@ -12,7 +12,7 @@
   "main": "./lib/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Papiel/filecleaner.hydrater.anyfetch.com"
+    "url": "https://github.com/AnyFetch/filecleaner.hydrater.anyfetch.com"
   },
   "keywords": [
     "anyfetch",
