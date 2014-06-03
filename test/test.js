@@ -18,8 +18,8 @@ after(function(){
 describe('Test Filecleaner', function() {
   it('should delete the document', function(done){
     var document = {
-      datas: {},
-      metadatas: {},
+      data: {},
+      metadata: {},
       access_token: "123",
       identifier: "azerty",
     };
