@@ -12,7 +12,7 @@
   "main": "./lib/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Papiel/filecleaner.hydrater.anyfetch.com"
+    "url": "https://github.com/AnyFetch/filecleaner.hydrater.anyfetch.com"
   },
   "keywords": [
     "anyfetch",
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "anyfetch-file-hydrater": ">=0.2.19",
-    "anyfetch": "0.2.21",
+    "anyfetch": "0.2.x",
     "newrelic": "^1.7.4"
   },
   "devDependencies": {
