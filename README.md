@@ -1,4 +1,4 @@
-# Hydrater EML
+# Hydrater FileCleaner
 > Visit http://anyfetch.com for details about AnyFetch.
 
 Remove garbage documents.
