@@ -20,7 +20,7 @@
     "filecleaner"
   ],
   "dependencies": {
-    "anyfetch-hydrater": "^0.3.0",
+    "anyfetch-hydrater": "^0.3.1",
     "anyfetch": "0.2.27"
   },
   "devDependencies": {
