@@ -6,17 +6,16 @@ var eml = require('../lib/');
 var AnyfetchClient = require('anyfetch');
 var anyfetchHydrater = require('anyfetch-hydrater');
 
-process.env.ANYFETCH_API_URL = 'http://localhost:1338';
 
 // Create a fake HTTP server
-var apiServer = AnyfetchClient.debug.createTestApiServer();
+var apiServer = AnyfetchClient.createMockServer();
 apiServer.listen(1338);
 after(function(){
   apiServer.close();
 });
 
 describe('Test Filecleaner', function() {
-  it('should delete the document', function(done){
+  it('should delete the document', function(done) {
     var document = {
       data: {},
       metadata: {},
@@ -26,6 +25,7 @@ describe('Test Filecleaner', function() {
 
     var changes = anyfetchHydrater.defaultChanges();
 
+    done.apiUrl = 'http://localhost:1338';
     eml(__dirname + "/samples/osef.lock", document, changes, done);
   });
 });
