@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 {
   "name": "anyfetch-filecleaner-hydrater",
   "version": "1.0.0",
@@ -37,4 +35,3 @@
     "node": ">=0.10"
   }
 }
->>>>>>> 9b16b209e4eb222bdd3d654dc96a6113cd4155fc
