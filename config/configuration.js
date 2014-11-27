@@ -3,19 +3,21 @@
  */
 
 // node_env can either be "development" or "production"
-var node_env = process.env.NODE_ENV || "development";
-var default_port = 8000;
+var nodeEnv = process.env.NODE_ENV || "development";
+var defaultPort = 8000;
 
 // Number of pdf instance to run simultaneously per cluster
-var default_concurrency = 8;
+var defaultConcurrency = 8;
 
-if(node_env === "production") {
-  default_port = 80;
+if(nodeEnv === "production") {
+  defaultPort = 80;
 }
 
 // Exports configuration
 module.exports = {
-  env: node_env,
-  port: process.env.PORT || default_port,
-  concurrency: process.env.HYDRATER_FILECLEANER_CONCURRENCY || default_concurrency
+  env: nodeEnv,
+  port: process.env.PORT || defaultPort,
+  concurrency: process.env.FILECLEANER_CONCURRENCY || defaultConcurrency,
+  appName: process.env.APP_NAME || "filecleaner-hydrater",
+  redisURl: process.env.REDIS_URL
 };
