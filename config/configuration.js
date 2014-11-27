@@ -19,5 +19,5 @@ module.exports = {
   port: process.env.PORT || defaultPort,
   concurrency: process.env.FILECLEANER_CONCURRENCY || defaultConcurrency,
   appName: process.env.APP_NAME || "filecleaner-hydrater",
-  redisURl: process.env.REDIS_URL
+  redisUrl: process.env.REDIS_URL
 };
