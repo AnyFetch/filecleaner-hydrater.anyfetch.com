@@ -17,7 +17,10 @@ if(nodeEnv === "production") {
 module.exports = {
   env: nodeEnv,
   port: process.env.PORT || defaultPort,
-  concurrency: process.env.FILECLEANER_CONCURRENCY || defaultConcurrency,
+
+  concurrency: process.env.CONCURRENCY || defaultConcurrency,
+  tasksPerProcess: process.env.TASKS_PER_PROCESS,
+
   appName: process.env.APP_NAME || "filecleaner-hydrater",
   redisUrl: process.env.REDIS_URL,
 
